@@ -1,0 +1,121 @@
+body {
+    background-color: rgb(198, 241, 227);
+    font-family: 'Montserrat', sans-serif;
+}
+
+/*header*/
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
+    width: 100%;
+    padding-top: 30px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+  
+}
+
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__logo {
+    padding: 30px;
+    font-size: 30px;
+    font-weight: 700;
+    color:#fff;
+    text-shadow: 3px 5px 6px;
+    box-shadow: -20px 20px 0 -17px #fff, 
+    20px -20px 0 -17px #fff;
+}
+
+/*nav*/
+
+.nav {
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.nav__link {
+    text-decoration: none;
+    color: #fff;
+    margin: 0 15px;
+    vertical-align: top;
+    position: relative;
+    transition: color 0.5s linear;
+}
+
+.nav__link:after {
+    content: "";
+    background-color: rgba(167, 242, 255, 0.897);
+    display: block;
+    position: absolute;
+    opacity: 0;
+    width: 100%;
+    height: 3px;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+    border-radius: 10px;
+
+    transition: opacity 0.5s linear;
+}
+
+.nav__link:active {
+    color: darkred;
+}
+
+.nav__link:hover {
+    color: rgba(167, 242, 255, 0.897);
+}
+
+.nav__link:hover:after{
+    opacity: 1;
+}
+
+/*Intro*/
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    width: 100%;
+    height: 90vh;
+    background: url("../images/myCV.jpg") center no-repeat;
+    background-size: cover;
+}
+
+.intro__inner {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    text-align: center;
+}
+
+.intro__title {
+    color: black;
+    font-size: 100px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-shadow: 3px 5px 6px;
+}
+
+.intro__uptitle {
+    margin-bottom: 40px;
+
+    font-family: 'Kaushan Script', cursive;
+    font-size: 72px;
+    color: #fff;
+
+}
